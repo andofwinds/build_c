@@ -1,0 +1,10 @@
+specify default = test_jump;
+
+target test_jump {
+	entry = "?test_jump.c";
+}
+
+target default {
+	entry = "?";
+	deps = {test_jump};
+}
